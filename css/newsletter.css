@@ -1,0 +1,57 @@
+.newsletter{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    text-align: center;
+}
+
+.newsletter-bg{
+    background-image: url("../imgs/wallpaper2.jpg");
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-size: cover;
+    padding: 70px 40px;
+}
+
+.newsletter-bg p{
+    max-width: 600px;
+    font-size: 15px;
+    margin: 40px auto;
+    font-weight: 300;
+}
+
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i{
+    background-color: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox,.newsletter-btn{
+    border: none;
+    outline: none;
+}
+
+.tbox{
+    width: 0;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;   
+}
+
+.email-box:hover > .tbox, .tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.newsletter-btn{
+    background-color: #2f3542;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

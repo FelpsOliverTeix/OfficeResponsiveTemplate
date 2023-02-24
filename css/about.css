@@ -1,0 +1,102 @@
+.about-container{
+    align-items: center;
+    justify-content: center;
+    background-image: url("./imgs/wallpaper2.jpg");
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.more-about{
+    max-width: 1200px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.more-about a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-img{
+    width: 100%;
+    margin-right: 5px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.about-img, .accordion-menu{
+    width: calc(50% - 20px);
+}
+
+.about-title{
+    background-color: #101224;
+    cursor: pointer;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+}
+.about-title a{
+    color: #fff;
+}
+
+.icon{
+    position: relative;
+    width: 14px;
+}
+
+.icon:before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color: #fff;
+    top: -1.5px;
+}
+
+.icon::after{
+    transform: rotate(90deg);
+    transition: .5s linear;
+}
+
+.text{
+    background-color: #828181;
+    border-radius: 10px;
+    margin: 6px 0;
+    opacity: 0;
+    height: 0;
+    line-height: 26px;
+}
+
+.item:target .text{
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    margin: 12px 0;
+}
+
+.item:target .icon::after{
+    transform: rotate(0);
+}
+
+@media screen and (max-width: 960px) {
+    .more-about{
+        max-width: 600px;
+        flex-direction: column;
+    }
+
+    .about-img, .accordion-menu{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
